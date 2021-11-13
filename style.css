@@ -16,41 +16,49 @@ h1 {
     padding: 18px 0 18px 0;
     margin: 0 0 10px 0;
 }
+.hh{
+    
+        font-size: 15pt;
+        color: #20bcd5;
+        text-align: left;
+        padding: 18px 0 18px 0;
+        margin: 0 0 10px 0;
+    
+}
+
+
+
 h1 span {
     border: 4px dashed #20bcd5;
     padding: 10px;
 }
 p {
-    padding: 0;
-    margin: 0;
+    margin-bottom: 1.5rem;
+    max-width: 40em;
 }
-.img-circle {
-    border: 3px solid white;
-    border-radius: 50%;
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 .section {
     background-color: #fff;
     padding: 15px;
     margin-bottom: 10px;
-    border-radius: 10px;
+    
+    
 }
-#header {
-    background-image: url("https://www.sololearn.com/Uploads/header.jpg");
-    background-size: cover;
-}
-#header img {
-    display: block;
-    width: 80px;
-    height: 80px;
-    margin: auto;
-}
-#header p {
-    font-size: 25pt;
-    color: #3b464c;
-    padding-top: 5px;
-    margin: 0;
-    font-weight: bold;
-    text-align: center;
+
+
+.sidebar-one p {
+    margin: 2rem 0px;
+    font-size: 1.35rem;
+    color: #0f172a;
+    
+    text-align: left;
+   
 }
 .quote {
     font-size: 12pt;
@@ -162,16 +170,96 @@ input, textarea {
     padding-bottom: 10px;
     color: grey;
 }
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 20%;
-  }
+
   
   .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
-  
-  .container {
-    padding: 2px 16px;
+
+  /* Float four columns side by side */
+.column {
+    float: left;
+    width: 22%;
+    padding: 15px 15px;
+    
   }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;
+    
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+
+
+  .column-layout{
+	max-width: 100%;
+	margin: 40px auto 0 auto;
+	line-height: 1.65;
+	padding: 10px 10px;
+	background-color: #FFF;
+	/*display: flex;*/
+}
+
+.main-column{
+ 	flex: 1;
+ 	order: 2; /*this is for ordering content to be shown in the middle of the page*/
+ 	text-align: justify;
+ 	padding: 0px 10px 0px 100px;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	margin-right: 1px;
+    
+    
+
+}
+.sidebar-one{
+ 	flex: 1;
+ 	order: 1; /*this is for ordering content to be shown in the middle of the page*/
+    
+ 	text-align: justify;
+
+ 	padding: 0px 10px 0px 0px;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	margin-right: 1px;
+    
+	
+}
+
+
+@media (min-width: 900px){
+	.column-layout{
+		display: flex; 
+		justify-content: space-around;
+	}
+}
+
