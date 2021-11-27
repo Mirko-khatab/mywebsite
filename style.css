@@ -262,4 +262,11 @@ input, textarea {
 		justify-content: space-around;
 	}
 }
+a{
+    color:black;
+    font-weight:600;
+    text-decoration-line: none;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
