@@ -8,12 +8,9 @@ h1{
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
-    box-shadow: 0px 0px 10px 0px #888888;
+    box-shadow: 10px 10px 8px 10px #888888;
 }
 p{
  font-family: sans-serif;
  font-size: 1.2rem;
-}
-.cc{
-    box-shadow: 0px 0px 10px 0px #888888;
 }
