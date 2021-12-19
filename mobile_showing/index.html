@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Phone-perform</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+	<body>
+	      <div class="Main">
+	      	<nav>
+	      		<div class="logo">
+	      			<img src="images/logo.png">
+	      		</div>
+	      		<div class="nav-link">
+	      			<ul>
+	      			<li><a href="#">Home</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Card</a></li>                               
+	      			</ul>
+	      			
+	      		</div>
+	      	</nav>
+	      	<div class="information">
+	      		<div class="overlay"></div>
+	     	<!-- <div class="mobile">
+	      	<div id="div1"><img src="images/mobile.png"></div>
+                <div id="div2"><img src="images/mobile.png" ></div>
+                <div id="div3"><img src="images/mobile.png" ></div>
+                <div id="div4"><img src="images/mobile.png" ></div>
+                <div id="div5"><img src="images/mobile.png" ></div>
+            </div>--->
+	      		<img src="images/mobile.png" class="mobile">
+	      		<div id="circle">
+	      			<div class="feature one">
+	      				<img src="images/camera.png">
+	      				<div>
+	      					<h1>Camera</h1>
+	      					<p>12mp,Wide angel Lens</p>
+	      				</div>
+	      			</div>
+	      			<div class="feature two">
+	      				<img src="images/processor.png">
+	      					<div>
+	      						<h1>processor</h1>
+	      					<p>snapdragon Octa-core 11nm</p>
+	      				</div>
+	      			</div>
+	      			<div class="feature three">
+	      				<img src="images/display.png">
+	      				<div>
+	      					<h1>display</h1>
+	      					<p>6.5"Mini-Drop FullScreen</p>
+	      				</div>
+	      			</div>
+	      			<div class="feature four">
+	      				<img src="images/battery.png">
+	      					<div>
+	      					<h1>Battery life</h1>
+	      					<p>5000mAh 720H standby</p>
+	      				</div>
+	      			</div>
+	      		</div>
+	      	</div>
+	      	<div class="control">
+	      		<img src="images/arrow.png" id="up">
+	      		<div><h3>Feachures</h3></div>
+	      		<img src="images/arrow.png" id="down">
+	      	</div>
+	      </div>
+	      <script>
+	      	var circle = document.getElementById("circle");
+	      	var up = document.getElementById("up");
+	      	var down = document.getElementById("down");
+	      	var rotateValue = circle.style.transform;
+	      	var rotateSum;
+
+	      	up.onclick= function(){
+	      		rotateSum = rotateValue +"rotate(-90deg)";
+	      		circle.style.transform =rotateSum;
+	      		rotateValue = rotateSum;
+	      	}
+	      		down.onclick= function(){
+	      		rotateSum = rotateValue +"rotate(90deg)";
+	      		circle.style.transform =rotateSum;
+	      		rotateValue = rotateSum;
+	      	}
+	      </script>
+	      
+
+	</body>
+</html>

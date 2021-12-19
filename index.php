@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<div class="container-sm section">
+  <div class="container-sm section">
     <div class="row">
       <div class="col">
         <h2><span>MyProject</span></h2>
@@ -24,31 +24,31 @@
   </div>
 
   <div class="container-sm section">
-  <div class="row row-cols-1 row-cols-sm-3 g-4">
+    <div class="row row-cols-1 row-cols-sm-3 g-4">
       <?php 
- 
  require_once 'includ/dbc.php';
  $result = $dbh->prepare("SELECT * FROM fpage");
  $result->execute();
  $row = $result->fetchall();
- 
   foreach ($row as $val) {
     ?>
       <div class="col">
-      <div class="card h-100 card text-dark bg-light mb-3">
+        <div class="card h-100 card text-dark bg-light mb-3">
           <img src=<?php echo "img/".$val['imgs']; ?> class="card-img-top " alt="something rong">
           <div class="card-body">
             <h5 class="card-title"><?php echo $val['title']; ?></h5>
             <p class="card-text"><?php echo $val['detail']; ?></p>
-            <a href='https://github.com/Mirko-khatab/webproject2'><button class="btn btn-primary">Showing</button></a>
-            <a href='https://github.com/Mirko-khatab/webproject2'><button class="btn btn-secondary">source code</button></a>
+            <a href="<?php echo $val['title'].'/index.html'; ?>"><button class="btn btn-primary">Showing</button></a>
+            <a href='https://github.com/Mirko-khatab/webproject2'><button class="btn btn-secondary">source
+                code</button></a>
           </div>
-         </div>
         </div>
-        <?php
+      </div>
+      <?php
          }
         ?>
-      </div>
     </div>
+  </div>
 </body>
+
 </html>
